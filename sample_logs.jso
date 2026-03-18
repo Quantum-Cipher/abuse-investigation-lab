@@ -1,1 +1,9 @@
-
+[
+  {"user": "user1", "action": "login_fail", "ip": "192.168.1.1"},
+  {"user": "user1", "action": "login_fail", "ip": "192.168.1.1"},
+  {"user": "user1", "action": "login_fail", "ip": "192.168.1.1"},
+  {"user": "user1", "action": "login_fail", "ip": "192.168.1.1"},
+  {"user": "user1", "action": "login_fail", "ip": "192.168.1.1"},
+  {"user": "user2", "action": "transaction", "amount": 15000},
+  {"user": "user3", "action": "transaction", "amount": 50}
+]
