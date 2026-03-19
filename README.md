@@ -1,39 +1,69 @@
 # Abuse Investigation Lab
 
-This repository demonstrates how I detect and analyze abuse patterns using structured logs, anomaly detection, and simple AI-assisted logic.
+A lightweight Python project that demonstrates how suspicious behavior can be identified from structured event logs using simple, explainable detection rules.
 
-## Objective
+This repository is designed as a portfolio project for Trust & Safety, fraud analysis, and Abuse Investigator–style roles. It focuses on turning raw events into actionable findings through reproducible logic rather than opaque automation.
 
-Identify suspicious behavior patterns such as:
-- Repeated failed logins
-- High-frequency transactions
-- Unusual IP activity
-- Behavioral anomalies across time
+---
 
-## Investigation Workflow
+## Overview
 
-1. Ingest logs (JSON format)
-2. Analyze frequency + anomalies
-3. Flag suspicious entities
-4. Output structured alerts
+Abuse detection is rarely about a single event. It is usually about a pattern that emerges across users, IP addresses, actions, and time.
 
-## Example Signals
+This project simulates a small investigation pipeline that:
 
-- >5 login failures in short window
-- Transactions above normal threshold
-- Rapid repeated actions (bot-like behavior)
+- loads JSON event logs
+- aggregates behavior by user and IP
+- detects suspicious activity using clear rules
+- prints a structured investigation summary
+- writes a machine-readable report to `investigation_report.json`
+
+The goal is to show practical reasoning, signal correlation, and investigative workflow design in a form that is easy to review.
+
+---
 
 ## Why This Matters
 
-Abuse detection is not about single events — it’s about **patterns over time**.
+Trust & Safety and abuse investigation teams often need to:
 
-This project demonstrates:
-- Signal correlation
-- Behavioral analysis
-- Structured investigation logic
+- identify repeated suspicious behavior
+- correlate signals across accounts and infrastructure
+- distinguish isolated noise from meaningful patterns
+- produce clear, evidence-based summaries
 
-## Next Steps
+This repository demonstrates those fundamentals in a minimal, readable format.
 
-- Add ML-based anomaly detection
-- Integrate real-time log ingestion
-- Expand classification modelso
+---
+
+## Detection Rules
+
+The detector currently flags the following patterns:
+
+1. **Excessive login failures**
+   - Triggered when a user exceeds a defined threshold of failed login attempts
+
+2. **High-value transactions**
+   - Triggered when a transaction amount exceeds a defined threshold
+
+3. **Excessive password reset attempts**
+   - Triggered when a user makes repeated password reset requests
+
+4. **IP touching many accounts**
+   - Triggered when a single IP address interacts with multiple distinct users
+
+Each alert is assigned a severity level:
+- `LOW`
+- `MEDIUM`
+- `HIGH`
+
+---
+
+## Repository Structure
+
+```text
+abuse-investigation-lab/
+├── README.md
+├── detector.py
+├── sample_logs.json
+├── requirements.txt
+└── .gitignore
