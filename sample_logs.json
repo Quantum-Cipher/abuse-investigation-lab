@@ -1,0 +1,102 @@
+[
+  {
+    "timestamp": "2026-03-18T08:00:01Z",
+    "user": "user1",
+    "action": "login_fail",
+    "ip": "192.168.1.10"
+  },
+  {
+    "timestamp": "2026-03-18T08:00:18Z",
+    "user": "user1",
+    "action": "login_fail",
+    "ip": "192.168.1.10"
+  },
+  {
+    "timestamp": "2026-03-18T08:00:37Z",
+    "user": "user1",
+    "action": "login_fail",
+    "ip": "192.168.1.10"
+  },
+  {
+    "timestamp": "2026-03-18T08:01:02Z",
+    "user": "user1",
+    "action": "login_fail",
+    "ip": "192.168.1.10"
+  },
+  {
+    "timestamp": "2026-03-18T08:01:20Z",
+    "user": "user1",
+    "action": "login_fail",
+    "ip": "192.168.1.10"
+  },
+  {
+    "timestamp": "2026-03-18T08:01:44Z",
+    "user": "user1",
+    "action": "login_fail",
+    "ip": "192.168.1.10"
+  },
+  {
+    "timestamp": "2026-03-18T08:03:00Z",
+    "user": "user2",
+    "action": "transaction",
+    "amount": 15000,
+    "ip": "10.0.0.8"
+  },
+  {
+    "timestamp": "2026-03-18T08:03:22Z",
+    "user": "user3",
+    "action": "transaction",
+    "amount": 50,
+    "ip": "10.0.0.8"
+  },
+  {
+    "timestamp": "2026-03-18T08:04:01Z",
+    "user": "user4",
+    "action": "password_reset",
+    "ip": "172.16.0.22"
+  },
+  {
+    "timestamp": "2026-03-18T08:04:50Z",
+    "user": "user4",
+    "action": "password_reset",
+    "ip": "172.16.0.22"
+  },
+  {
+    "timestamp": "2026-03-18T08:05:33Z",
+    "user": "user4",
+    "action": "password_reset",
+    "ip": "172.16.0.22"
+  },
+  {
+    "timestamp": "2026-03-18T08:06:15Z",
+    "user": "user5",
+    "action": "login_success",
+    "ip": "203.0.113.77"
+  },
+  {
+    "timestamp": "2026-03-18T08:07:05Z",
+    "user": "user6",
+    "action": "login_fail",
+    "ip": "192.168.1.10"
+  },
+  {
+    "timestamp": "2026-03-18T08:08:41Z",
+    "user": "user7",
+    "action": "transaction",
+    "amount": 9900,
+    "ip": "198.51.100.2"
+  },
+  {
+    "timestamp": "2026-03-18T08:09:12Z",
+    "user": "user8",
+    "action": "login_success",
+    "ip": "203.0.113.90"
+  },
+  {
+    "timestamp": "2026-03-18T08:09:55Z",
+    "user": "user9",
+    "action": "transaction",
+    "amount": 200,
+    "ip": "10.0.0.8"
+  }
+]
